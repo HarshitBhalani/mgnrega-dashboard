@@ -5,8 +5,8 @@ import YearSelector from "./components/YearSelector";
 import axios from "axios";
 import { strings, LANGS } from "./i18n";
 import "./App.css";
+import logo from "./assets/logo.png";
 
-// ✅ Import professional icons from Lucide
 import {
   Building2,
   HelpCircle,
@@ -128,7 +128,8 @@ function App() {
       <header className="topbar">
         <div className="header-content">
           <div className="logo-section">
-            <Building2 size={32} className="text-blue-600 mr-2" />
+            {/* <Building2 size={32} className="text-blue-600 mr-2" /> */}
+            <img src={logo} alt="Logo" width={"50px"}  height={"50px"}/>
             <div>
               <h1 className="app-title">{t.title}</h1>
               <div className="app-subtitle">{t.subtitle}</div>
